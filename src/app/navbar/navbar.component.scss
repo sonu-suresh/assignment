@@ -1,0 +1,24 @@
+.sticky-nav-wrapper {
+  min-height: 40px;
+}
+
+.sticky-nav {
+  height: 40px;
+}
+
+.sticky-box-shadow {
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
+}
+
+.nav-menu {
+  display: inline-block;
+  list-style: none;
+}
+.nav-menu-item {
+  text-align: left;
+  font: normal normal normal 25px/34px Open Sans;
+  letter-spacing: 0px;
+  color: #222222;
+  opacity: 1;
+  text-decoration: none;
+}

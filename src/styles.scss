@@ -1,1 +1,39 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  /* setting var for nav height, you can do this however you want */
+  --sticky-nav-height: 60px;
+}
+
+:root {
+  --font-regular-color: #222;
+  --font-light-color: #505050;
+  --purple: #639;
+  --purple-dark: #4c2574;
+}
+
+.sticky-nav-wrapper {
+  /* set min height on wrapper so that the page
+     doesn't awkwardly snap and lose height */
+  min-height: var(--sticky-nav-height);
+}
+
+.sticky-nav {
+  height: var(--sticky-nav-height);
+
+  /* other styles */
+} /* You can add global styles to this file, and also import other style files */
+
+body {
+  margin: 0px;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+.width-100 {
+  width: 100%;
+}
+.bank-open-logo {
+  width: 5em;
+  height: 5em;
+  //   margin-left: 2em;
+}
