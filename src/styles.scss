@@ -1,3 +1,15 @@
+@font-face {
+  font-family: Montserrat;
+  src: url(assets/fonts/Montserrat-Regular.ttf) format('opentype');
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', 'arial', sans-serif;
+}
+
 :root {
   /* setting var for nav height, you can do this however you want */
   --sticky-nav-height: 60px;

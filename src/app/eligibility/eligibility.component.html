@@ -2,14 +2,28 @@
 
     <div class="content" fxLayout="row" fxLayout.xs="column" fxFlexFill>
 
-        <div fxFlex="15" class="sec1" fxFlex.xs="55">
-            first-section
+        <div fxFlex="50" class="section1" fxFlex.xs="55">
+
+            <div fxLayout="column" [ngClass.gt-md]="'section-padding'" fxLayoutAlign="start start" fxLayoutGap="2em">
+                <div fxLayout="row" fxLayoutAlign="start start">
+                    <h1> We make it Super Simple </h1>
+                </div>
+
+                <div fxLayout="row" class="black-line" fxLayoutAlign="start start">
+
+                </div>
+                <div fxLayout="row" fxLayoutAlign="start start">
+                    <img id="video" class="video-img" src="assets/images/collect_img-video.png" alt="video">
+                    <img id="dots" class="video-dots" src="assets/images/accounting_dots.svg" alt="dots">
+                </div>
+            </div>
+
+
+
         </div>
-        <div fxFlex="30" class="sec2">
+
+        <div fxFlex="50" class="section2" fxFlex.xs="15">
             second-section
-        </div>
-        <div fxFlex="55" class="sec3" fxFlex.xs="15">
-            third-section
         </div>
 
     </div>
