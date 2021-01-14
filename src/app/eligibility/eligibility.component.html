@@ -12,7 +12,7 @@
 
         </div>
     </div>
-    <div class="content" fxLayout="row" fxLayout.xs="column" fxFlex=100>
+    <div class="content" fxLayout="row" fxLayout.xs="column" fxLayout.md="column" fxFlex=100>
         <div fxFlex="50" fxLayout="column" class="section1" fxFlex.xs="55">
             <div fxLayout="column" [ngClass.gt-md]="'section-padding'" fxLayoutAlign="start start">
                 <div fxLayout="row" fxLayoutAlign="start start">
@@ -43,7 +43,7 @@
 
 
                             <div class="each-field">
-                                <app-custom-slider [title]="'Monthly Expense'" [showMinMax]="false">
+                                <app-custom-slider [title]="'Monthly Expense'" [showMinMax]="false" [max]="100000">
 
                                 </app-custom-slider>
                             </div>
@@ -114,15 +114,7 @@
                             </div>
                         </div>
 
-
-
-
-
-
-
-
                     </div>
-
 
                     <img id="dots" class="video-dots-2" src="assets/images/accounting_dots.svg" alt="dots">
 

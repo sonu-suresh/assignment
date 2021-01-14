@@ -67,9 +67,10 @@ body {
   margin-left: 5px;
   height: 350px;
   width: 220px;
-  background-color: var(--purple);
+  background-color: #4c2574;
   border-radius: 0 20px 20px 0;
   -webkit-border-radius: 0 20px 20px 0;
+  background-image: linear-gradient(287deg, #8762ac 0%, #470f7e 52%);
 }
 .card-title {
   font-weight: 600;
