@@ -1,15 +1,16 @@
-<label for="vol">{{title}}</label>
-<h1>
-    ₹ {{ value}}
+<label class="custom-label" for="vol">{{title}}</label>
+<h1 class="custom-value">
+    ₹ {{ value| number}}
+
 </h1>
-<input type="range" id="vol" name="vol" [(ngModel)]="value" [min]="min" [max]="max">
+<input #slider class="width-100 slider" type="range" id="vol" name="vol" [(ngModel)]="value" [min]="min" [max]="max">
 <div *ngIf="showMinMax">
     <div fxLayout="row" fxLayoutAlign="space-around start">
-        <div fxLayout="column" fxLayoutAlign="start start">
-            ₹ {{min}}
+        <div class="custom-light-small-text" fxLayout="column" fxLayoutAlign="start start">
+            ₹ {{min | number}}
         </div>
-        <div fxLayout="column" fxLayoutAlign="end end">
-            ₹ {{max}}
+        <div class="custom-light-small-text" fxLayout="column" fxLayoutAlign="end end">
+            ₹ {{max | number}}
         </div>
     </div>
 </div>

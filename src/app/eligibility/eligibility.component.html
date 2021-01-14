@@ -29,59 +29,82 @@
 
         <div fxFlex="50" fxLayout="column" class="section2" fxFlex.xs="15">
             <div fxLayout="column" fxLayoutAlign="start start">
-                <div fxLayout="row" fxLayoutAlign="start start">
-                    <div class="card">
+                <div fxLayout="row" class="width-100" fxLayoutAlign="start start">
+                    <div fxLayout="column" class="card">
+                        <h3 class="card-title">
+                            Eligibility calculator
+                        </h3>
+                        <div class="calc-form" fxLayout="column" fxLayoutAlign="start start" fxLayoutGap="0.8em">
+                            <div class="each-field">
+                                <app-custom-slider [title]="'Monthly income'" [showMinMax]="true">
 
-                        <app-custom-slider [title]="'Monthly income'" [showMinMax]="true">
+                                </app-custom-slider>
+                            </div>
 
-                        </app-custom-slider>
+
+                            <div class="each-field">
+                                <app-custom-slider [title]="'Monthly Expense'" [showMinMax]="false">
+
+                                </app-custom-slider>
+                            </div>
+
+                            <div class="each-field">
+                                <div fxLayout="column" fxLayoutAlign="start start">
+                                    <div fxLayout="row" fxLayoutAlign="start start">
+                                        <label class="custom-label" for="cars">Repayment Tenure</label>
+                                    </div>
+
+                                    <div fxLayout="row" class="width-100" fxLayoutAlign="start start">
+                                        <select class="custom-select width-100" name="cars" id="cars">
+                                            <option value="3 months">3 months</option>
+                                            <option value="6 months">6 months</option>
+                                            <option value="9 months">9 months</option>
+                                            <option value="12 months">12 months</option>
+                                        </select>
+                                    </div>
 
 
-                        <app-custom-slider [title]="'Monthly Expense'" [showMinMax]="false">
+                                </div>
+                            </div>
 
-                        </app-custom-slider>
+                            <div fxLayout="row" class="width-100" fxLayoutAlign="space-between center">
+                                <label class="custom-label" for="emi">Do you have any existing loans?</label>
+                                <span>
+                                    <label class="switch">
+                                        <input class="apple-switch" type="checkbox" checked>
+                                    </label>
+                                </span>
+                            </div>
 
-                        <div fxLayout="row" fxLayoutAlign="start start">
-                            <label for="cars">Repayment Tenure</label>
-
-                            <select name="cars" id="cars">
-                                <option value="3 months">3 months</option>
-                                <option value="6 months">6 months</option>
-                                <option value="9 months">9 months</option>
-                                <option value="12 months">12 months</option>
-                            </select>
-                        </div>
-
-                        <div fxLayout="row" fxLayoutAlign="start start">
-                            <label for="emi">Do you have any existing loans?</label>
-                            <span>
-                                <label class="switch">
-                                    <input type="checkbox" checked>
-                                    <span class="slider round shrink"></span>
+                            <div fxLayout="row" fxLayoutAlign="start start">
+                                <label class="custom-label" for=" emi">EMI of existing loan (optional)
                                 </label>
-                            </span>
-                        </div>
 
-                        <div fxLayout="row" fxLayoutAlign="start start">
-                            <label for="emi">EMI of existing loan (optional) </label>
-                            <div class="input-container">
-                                <input type="text" name="emi" id="emi" placeholder="₹ 15000" />
+                            </div>
+                            <div fxLayout="row" class="width-100" fxLayoutAlign="space-between center">
+                                <div class="width-100">
+                                    <input type="text" name="emi" id="emi" placeholder="₹ 15000" />
+                                </div>
                             </div>
                         </div>
+
                     </div>
 
 
-
-                    <div class="card-side">
+                    <div fxLayout="column" fxLayoutAlign="center  center" class="card-side">
 
                         <div fxLayout="row" fxLayoutAlign="start start">
-                            <h3>Loan amount</h3>
-                            <p>₹ 1,00,000</p>
+                            <h3 class="custom-white-medium-text">Loan amount</h3>
+                        </div>
+                        <div fxLayout="row" fxLayoutAlign="start start">
+                            <p class="white-text">₹ 1,00,000</p>
                         </div>
 
                         <div fxLayout="row" fxLayoutAlign="start start">
-                            <h3>Your EMI will be</h3>
-                            <p>₹ 15,000</p>
+                            <h3 class="custom-white-medium-text">Your EMI will be</h3>
+                        </div>
+                        <div fxLayout="row" fxLayoutAlign="start start">
+                            <p class="white-text">₹ 15,000</p>
                         </div>
 
 

@@ -47,6 +47,7 @@
 .content {
   min-width: 300px;
   /*height: 400px;*/
+  z-index: 1;
 }
 
 .black-line {
@@ -65,6 +66,7 @@
   position: relative;
   bottom: -200px;
   right: 250px;
+  z-index: -1;
 }
 
 .section-padding {
@@ -74,4 +76,7 @@
 .section-heading {
   width: 70%;
   margin: 0.2em 2em;
+}
+.calc-form {
+  padding: 1.5em;
 }
