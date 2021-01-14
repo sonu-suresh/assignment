@@ -1,0 +1,15 @@
+<label for="vol">{{title}}</label>
+<h1>
+    ₹ {{ value}}
+</h1>
+<input type="range" id="vol" name="vol" [(ngModel)]="value" [min]="min" [max]="max">
+<div *ngIf="showMinMax">
+    <div fxLayout="row" fxLayoutAlign="space-around start">
+        <div fxLayout="column" fxLayoutAlign="start start">
+            ₹ {{min}}
+        </div>
+        <div fxLayout="column" fxLayoutAlign="end end">
+            ₹ {{max}}
+        </div>
+    </div>
+</div>

@@ -8,10 +8,24 @@ import { EligibilityComponent } from './eligibility/eligibility.component';
 import { StickyNavModule } from 'ng2-sticky-nav';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { CustomButtonComponent } from './custom-button/custom-button.component';
+import { CustomSliderComponent } from './custom-slider/custom-slider.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
-  declarations: [AppComponent, NavbarComponent, EligibilityComponent, CustomButtonComponent],
-  imports: [BrowserModule, AppRoutingModule, StickyNavModule, FlexLayoutModule],
+  declarations: [
+    AppComponent,
+    NavbarComponent,
+    EligibilityComponent,
+    CustomButtonComponent,
+    CustomSliderComponent
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    StickyNavModule,
+    FlexLayoutModule,
+    FormsModule
+  ],
   providers: [],
   bootstrap: [AppComponent]
 })

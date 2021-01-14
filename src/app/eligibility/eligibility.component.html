@@ -1,33 +1,105 @@
 <div class="bounds">
+    <div class="circle-background">
+        <div fxLayout="row" fxLayoutAlign="start start">
+            <img src="assets/images/circle.svg" alt="circle-1">
 
-    <div class="content" fxLayout="row" fxLayout.xs="column" fxFlexFill>
+        </div>
+    </div>
 
-        <div fxFlex="50" class="section1" fxFlex.xs="55">
+    <div class="circle-left-background">
+        <div fxLayout="row" fxLayoutAlign="start start">
+            <img src="assets/images/blob-small.svg" alt="circle-1">
 
-            <div fxLayout="column" [ngClass.gt-md]="'section-padding'" fxLayoutAlign="start start" fxLayoutGap="2em">
+        </div>
+    </div>
+    <div class="content" fxLayout="row" fxLayout.xs="column" fxFlex=100>
+        <div fxFlex="50" fxLayout="column" class="section1" fxFlex.xs="55">
+            <div fxLayout="column" [ngClass.gt-md]="'section-padding'" fxLayoutAlign="start start">
                 <div fxLayout="row" fxLayoutAlign="start start">
-                    <h1> We make it Super Simple </h1>
+                    <h1 class="section-heading"> We make it Super Simple </h1>
                 </div>
-
-                <div fxLayout="row" class="black-line" fxLayoutAlign="start start">
-
+                <div class="black-line">
                 </div>
                 <div fxLayout="row" fxLayoutAlign="start start">
                     <img id="video" class="video-img" src="assets/images/collect_img-video.png" alt="video">
                     <img id="dots" class="video-dots" src="assets/images/accounting_dots.svg" alt="dots">
                 </div>
             </div>
-
-
-
         </div>
 
-        <div fxFlex="50" class="section2" fxFlex.xs="15">
-            second-section
-        </div>
+        <div fxFlex="50" fxLayout="column" class="section2" fxFlex.xs="15">
+            <div fxLayout="column" fxLayoutAlign="start start">
+                <div fxLayout="row" fxLayoutAlign="start start">
+                    <div class="card">
 
+                        <app-custom-slider [title]="'Monthly income'" [showMinMax]="true">
+
+                        </app-custom-slider>
+
+
+                        <app-custom-slider [title]="'Monthly Expense'" [showMinMax]="false">
+
+                        </app-custom-slider>
+
+                        <div fxLayout="row" fxLayoutAlign="start start">
+                            <label for="cars">Repayment Tenure</label>
+
+                            <select name="cars" id="cars">
+                                <option value="3 months">3 months</option>
+                                <option value="6 months">6 months</option>
+                                <option value="9 months">9 months</option>
+                                <option value="12 months">12 months</option>
+                            </select>
+                        </div>
+
+                        <div fxLayout="row" fxLayoutAlign="start start">
+                            <label for="emi">Do you have any existing loans?</label>
+                            <span>
+                                <label class="switch">
+                                    <input type="checkbox" checked>
+                                    <span class="slider round shrink"></span>
+                                </label>
+                            </span>
+                        </div>
+
+                        <div fxLayout="row" fxLayoutAlign="start start">
+                            <label for="emi">EMI of existing loan (optional) </label>
+                            <div class="input-container">
+                                <input type="text" name="emi" id="emi" placeholder="₹ 15000" />
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="card-side">
+
+                        <div fxLayout="row" fxLayoutAlign="start start">
+                            <h3>Loan amount</h3>
+                            <p>₹ 1,00,000</p>
+                        </div>
+
+                        <div fxLayout="row" fxLayoutAlign="start start">
+                            <h3>Your EMI will be</h3>
+                            <p>₹ 15,000</p>
+                        </div>
+
+
+
+                        <app-custom-button buttonText="GET MONEY" buttonType="white">
+
+                        </app-custom-button>
+
+
+
+                    </div>
+
+
+                    <img id="dots" class="video-dots" src="assets/images/accounting_dots.svg" alt="dots">
+
+                </div>
+
+            </div>
+        </div>
     </div>
-
 </div>
-
-<!-- <media-query-status></media-query-status> -->
