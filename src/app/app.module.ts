@@ -10,6 +10,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { CustomButtonComponent } from './custom-button/custom-button.component';
 import { CustomSliderComponent } from './custom-slider/custom-slider.component';
 import { FormsModule } from '@angular/forms';
+import { BenefitsComponent } from './benefits/benefits.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { FormsModule } from '@angular/forms';
     NavbarComponent,
     EligibilityComponent,
     CustomButtonComponent,
-    CustomSliderComponent
+    CustomSliderComponent,
+    BenefitsComponent
   ],
   imports: [
     BrowserModule,

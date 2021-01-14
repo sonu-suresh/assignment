@@ -53,6 +53,28 @@ body {
   //   margin-left: 2em;
 }
 
+.bounds-bottom {
+  background: transparent url(assets/images/sol_wave_bg.svg) 45% 0% no-repeat
+    padding-box;
+  padding-bottom: 4em;
+}
+
+.black-line {
+  height: 0.4em;
+  width: 160px;
+  background: #4e4d4d;
+  border-radius: 50px;
+  margin: 25px 0;
+}
+.section-padding {
+  padding-left: 3em;
+  padding-top: 4em;
+}
+.section-heading {
+  width: 70%;
+  margin: 0.2em 2em 0.2em 0em;
+}
+
 .card {
   min-width: 360px;
   min-height: 200px;

@@ -1,0 +1,23 @@
+.benefit-card-icon {
+  height: 75px;
+  width: 75px;
+}
+
+.benefit-card-title {
+}
+.benefit-card-description {
+  font-weight: 100;
+  color: #999;
+}
+
+.benefit-card {
+  min-width: 280px;
+  min-height: 200px;
+  background-color: white;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+  -webkit-border-radius: 20px;
+  padding: 1.5em;
+}

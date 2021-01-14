@@ -1,16 +1,11 @@
 /* Add application styles & imports to this file! */
 
-.bounds {
-  background-color: #ddd;
-  //   height: 800px;
-}
-
 .circle-background {
   position: absolute;
   right: 0;
-  top: -45%;
-  left: 40%;
-  transform: scale(0.7);
+  top: -52%;
+  left: 35%;
+  transform: scale(0.6);
 }
 
 .circle-left-background {
@@ -50,15 +45,6 @@
   z-index: 1;
 }
 
-.black-line {
-  height: 0.4em;
-  width: 160px;
-  background: #4e4d4d;
-  border-radius: 50px;
-  margin: 25px 0;
-  margin-left: 4em;
-}
-
 .video-img {
   max-width: 65%;
 }
@@ -75,14 +61,6 @@
   z-index: -1;
 }
 
-.section-padding {
-  padding-left: 3em;
-  padding-top: 4em;
-}
-.section-heading {
-  width: 70%;
-  margin: 0.2em 2em;
-}
 .calc-form {
   padding: 1.5em;
 }
