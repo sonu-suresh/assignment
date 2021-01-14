@@ -36,14 +36,16 @@
                         </h3>
                         <div class="calc-form" fxLayout="column" fxLayoutAlign="start start" fxLayoutGap="0.8em">
                             <div class="each-field">
-                                <app-custom-slider [title]="'Monthly income'" [showMinMax]="true">
+                                <app-custom-slider [title]="'Monthly Income'" (sliderChanged)="calculateLoan($event)"
+                                    [showMinMax]="true">
 
                                 </app-custom-slider>
                             </div>
 
 
                             <div class="each-field">
-                                <app-custom-slider [title]="'Monthly Expense'" [showMinMax]="false" [max]="100000">
+                                <app-custom-slider [title]="'Monthly Expense'" (sliderChanged)="calculateLoan($event)"
+                                    [showMinMax]="false" [max]="100000" [min]="10000">
 
                                 </app-custom-slider>
                             </div>
@@ -100,14 +102,14 @@
                                     <h3 class="custom-white-medium-text">Loan amount</h3>
                                 </div>
                                 <div fxLayout="row" fxLayoutAlign="start start">
-                                    <p class="white-text loan-amount">₹ 1,00,000</p>
+                                    <p class="white-text loan-amount">₹ {{loanAmount | number}}</p>
                                 </div>
 
                                 <div fxLayout="row" fxLayoutAlign="start start">
                                     <h3 class="custom-white-medium-text">Your EMI will be</h3>
                                 </div>
                                 <div fxLayout="row" fxLayoutAlign="start start">
-                                    <p class="white-text loan-amount">₹ 15,000</p>
+                                    <p class="white-text loan-amount">₹ {{emiAmount | number}}</p>
                                 </div>
                                 <app-custom-button buttonText="GET MONEY" buttonType="white">
 
@@ -116,8 +118,6 @@
                         </div>
 
                     </div>
-
-
 
 
                     <img id="dots" class="video-dots-2" src="assets/images/accounting_dots.svg" alt="dots">

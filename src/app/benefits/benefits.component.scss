@@ -6,7 +6,7 @@
 .benefit-card-title {
 }
 .benefit-card-description {
-  font-weight: 100;
+  font-size: 15px;
   color: #999;
 }
 
@@ -20,4 +20,9 @@
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
   -webkit-border-radius: 20px;
   padding: 1.5em;
+}
+
+.benefit-card-special {
+  background-color: var(--light-purple);
+  color: white;
 }

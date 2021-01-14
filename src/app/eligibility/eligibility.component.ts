@@ -6,10 +6,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./eligibility.component.scss']
 })
 export class EligibilityComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
+  constructor() {}
+  loanAmount = 0;
+  emiAmount = 0;
+  maxEmiAmount = 0;
+  ngOnInit(): void {}
+  calculateLoan(slideObj) {
+    if (slideObj && slideObj.title === 'Monthly Income') {
+      this.loanAmount = slideObj.value * 2;
+      this.emiAmount =
+        this.loanAmount / 12 + ((this.loanAmount / 12) * 2) / 100;
+    }
   }
-
 }

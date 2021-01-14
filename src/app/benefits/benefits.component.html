@@ -1,26 +1,14 @@
 <div class="bounds-bottom">
 
-    <div fxHide fxShow.gt-sm class="circle-background">
-        <!-- <div fxLayout="row" fxLayoutAlign="start start">
-            <img src="assets/images/circle.svg" alt="circle-1">
-
-        </div> -->
-    </div>
-
-    <div class="circle-left-background">
-        <!-- <div fxHide fxShow.gt-sm fxLayout="row" fxLayoutAlign="start start">
-            <img src="assets/images/blob-small.svg" alt="circle-1">
-
-        </div> -->
-    </div>
-    <div class="content" fxLayout="row" fxLayout.xs="column" fxLayout.md="column" fxFlex=100>
+    <div class="content" fxLayout="row wrap" fxLayout.xs="column wrap" fxFlex=100>
         <div fxFlex="50" fxLayout="column" [ngClass.gt-md]="'section-padding'" class="section2 " fxFlex.xs="15">
             <div fxLayout="column" fxLayoutAlign="start start">
-                <div fxLayout="row" class="width-100" fxLayoutAlign="space-around center">
+                <div fxLayout="row" fxLayoutAlign="space-around center">
                     <div fxLayout="column" fxFlex=45>
-                        <div fxLayout="row" *ngFor="let item of firstSection" class="benefit-card">
+                        <div fxLayout="row" *ngFor="let item of firstSection"
+                            [ngClass]="{'benefit-card-special': item.special}" class="benefit-card">
 
-                            <div fxLayout="column" fxLayoutAlign="space-between start">
+                            <div fxLayout="column" fxLayoutGap="0.7em" fxLayoutAlign="space-between start">
                                 <div fxLayout="row" fxLayoutAlign="start start">
                                     <img class="benefit-card-icon" [src]="item.icon">
                                 </div>
@@ -30,7 +18,8 @@
                                     </h3>
                                 </div>
                                 <div fxLayout="row" fxLayoutAlign="start start">
-                                    <p class="benefit-card-description">
+                                    <p class="benefit-card-description"
+                                        [ngClass]="{'benefit-card-special': item.special}">
                                         {{item.description}}
                                     </p>
                                 </div>
@@ -39,9 +28,10 @@
                     </div>
 
                     <div fxLayout="column" fxFlex=45>
-                        <div fxLayout="row" *ngFor="let item of secondSection" class="benefit-card">
+                        <div fxLayout="row" *ngFor="let item of secondSection"
+                            [ngClass]="{'benefit-card-special': item.special}" class="benefit-card">
 
-                            <div fxLayout="column" fxLayoutAlign="space-between start">
+                            <div fxLayout="column" fxLayoutGap="0.7em" fxLayoutAlign="space-between start">
                                 <div fxLayout="row" fxLayoutAlign="start start">
                                     <img class="benefit-card-icon" [src]="item.icon">
                                 </div>
@@ -51,30 +41,22 @@
                                     </h3>
                                 </div>
                                 <div fxLayout="row" fxLayoutAlign="start start">
-                                    <p class="benefit-card-description">
+                                    <p class="benefit-card-description"
+                                        [ngClass]="{'benefit-card-special': item.special}">
                                         {{item.description}}
                                     </p>
                                 </div>
                             </div>
                         </div>
-                    </div>
-
-
-
-                    <div fxLayout="column" class="height-100" fxLayoutAlign="center  center">
-
-
-
                     </div>
 
                 </div>
-
 
             </div>
         </div>
 
         <div fxFlex="50" fxLayout="column" [ngClass.gt-md]="'section-padding'" class="section1 " fxFlex.xs="55">
-            <div fxLayout="column" [ngClass.gt-md]="'section-padding'" fxLayoutAlign="start start">
+            <div fxLayout="column" fxLayoutAlign="start start">
                 <div fxLayout="row" fxLayoutAlign="start start">
                     <h1 class="section-heading"> Boost your business with Open </h1>
                 </div>
@@ -89,12 +71,7 @@
                             </p>
                         </div>
 
-
-
-
                     </div>
-                    <!-- <img id="video" class="video-img" src="assets/images/collect_img-video.png" alt="video"> -->
-                    <!-- <img id="dots" class="video-dots" src="assets/images/accounting_dots.svg" alt="dots"> -->
                 </div>
                 <div fxLayout="row" style="margin-top:3em" fxLayoutAlign="start start">
                     <app-custom-button buttonText="Get an Open Account">

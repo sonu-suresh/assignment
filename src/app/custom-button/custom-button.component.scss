@@ -16,18 +16,18 @@ button {
   cursor: pointer;
 }
 
-button.bordered {
+.bordered {
   border: 2px solid var(--purple);
   background-color: transparent;
 }
 
-button.filled {
-  background: linear-gradient(90deg, #9f62c9 0, #663399 100%);
+.filled {
+  background-image: linear-gradient(287deg, #8762ac 0%, #470f7e 52%);
   border: none;
   color: #fff;
 }
 
-button.white {
+.white {
   background: #fff;
   border: none;
   color: var(--purple);

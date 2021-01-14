@@ -3,7 +3,8 @@
     ₹ {{ value| number}}
 
 </h1>
-<input #slider class="width-100 slider" type="range" id="vol" name="vol" [(ngModel)]="value" [min]="min" [max]="max">
+<input #slider class="width-100 slider" type="range" id="vol" name="vol" [(ngModel)]="value"
+    (ngModelChange)="onSliderChange()" [min]="min" [max]="max">
 <div *ngIf="showMinMax">
     <div fxLayout="row" fxLayoutAlign="space-around start">
         <div class="custom-light-small-text" fxLayout="column" fxLayoutAlign="start start">
