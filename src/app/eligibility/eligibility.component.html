@@ -1,10 +1,8 @@
 <div>
-    <div fxHide fxShow.gt-sm class="circle-background">
-        <div fxLayout="row" fxLayoutAlign="start start">
-            <img src="assets/images/circle.svg" alt="circle-1">
+    <div class="circles-parent relative-parent">
 
-        </div>
     </div>
+
 
     <div class="circle-left-background">
         <div fxHide fxShow.gt-sm fxLayout="row" fxLayoutAlign="start start">
@@ -13,23 +11,31 @@
         </div>
     </div>
     <div class="content" fxLayout="row wrap" fxLayout.xs="column" fxFlex=100>
-        <div fxFlex="50" fxLayout="column" class="section1" fxFlex.xs="55">
+        <div fxFlex="48" fxLayout="column" class="section1" fxFlex.xs="55">
             <div fxLayout="column" [ngClass.gt-md]="'section-padding'" fxLayoutAlign="start start">
                 <div fxLayout="row" fxLayoutAlign="start start">
                     <h1 class="section-heading"> We make it Super Simple </h1>
                 </div>
                 <div class="black-line">
                 </div>
-                <div fxLayout="row" fxFlex.md="80" fxFlex.gt-md="80" fxFlex.xs=100 fxLayoutAlign="start start">
+                <div fxLayout="row" class="relative-parent" fxFlex.md="80" fxFlex.gt-md="80" fxFlex.xs=100
+                    fxLayoutAlign="start start">
                     <img id="video" class="video-img" src="assets/images/collect_img-video.png" alt="video">
                     <img id="dots" class="video-dots" src="assets/images/accounting_dots.svg" alt="dots">
                 </div>
             </div>
         </div>
 
-        <div fxFlex="50" fxLayout="column" class="section2" fxFlex.xs="15">
+        <div fxFlex="48" fxLayout="column" [ngClass.gt-md]="'section-padding'" class="section2" fxFlex.xs="15">
+
+            <div fxHide fxShow.gt-sm class="circle-background">
+                <div fxLayout="row" fxLayoutAlign="start start">
+                    <img src="assets/images/circle.svg" alt="circle-1">
+
+                </div>
+            </div>
             <div fxLayout="column" fxLayoutAlign="start start">
-                <div fxLayout="row" class="width-100" fxLayoutAlign="start start">
+                <div fxLayout="row" class="width-100 relative-parent" fxLayoutAlign="start start">
                     <div fxLayout="column" class="card">
                         <h3 class="card-title">
                             Eligibility calculator
@@ -38,7 +44,6 @@
                             <div class="each-field">
                                 <app-custom-slider [title]="'Monthly Income'" (sliderChanged)="calculateLoan($event)"
                                     [showMinMax]="true">
-
                                 </app-custom-slider>
                             </div>
 
