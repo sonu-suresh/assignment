@@ -12,15 +12,16 @@
 
     <div class="content" fxLayoutGap.sm="3em" fxLayout="row wrap" fxLayout.xs="column" fxLayoutAlign.sm="center center"
         fxLayout.sm="column" fxLayoutAlign="center" fxFlex=100>
-        <div fxFlex="48" fxFlex.sm="70" fxLayout="column" class="section1" fxFlex.xs="55">
-            <div fxLayout="column" [ngClass.gt-md]="'section-padding'" fxLayoutAlign="start start">
-                <div fxLayout="row" fxLayoutAlign="start start">
-                    <h1 class="section-heading"> We make it Super Simple </h1>
+        <div fxFlex="48" fxFlex.sm="70" fxLayout="column" class="section1" fxFlex.xs="100">
+            <div fxLayout="column" [ngClass.gt-md]="'section-padding'" fxLayoutAlign="start start"
+                fxLayoutAlign.xs="center center">
+                <div fxLayout="row" [ngClass.xs]="'width-75'" fxLayoutAlign="start start">
+                    <h1 [ngClass.gt-xs]="'section-heading'"> We make it Super Simple </h1>
                 </div>
                 <div class="black-line">
                 </div>
                 <div fxLayout="row" class="relative-parent" fxFlex.md="80" fxFlex.gt-md="80" fxFlex.xs=100
-                    fxLayoutAlign="start start">
+                    fxLayoutAlign="start start" fxLayoutAlign.xs="center center">
                     <img id="video" class="video-img" src="assets/images/collect_img-video.png" alt="video">
                     <img id="dots" class="video-dots" src="assets/images/accounting_dots.svg" alt="dots">
                 </div>
@@ -28,7 +29,7 @@
         </div>
 
         <div fxFlex="48" fxFlex.sm="70" fxLayout="column" [ngClass.gt-md]="'section-padding'" class="section2"
-            fxFlex.xs="15">
+            fxFlex.xs="100">
 
             <div fxHide fxShow.gt-sm class="circle-background">
                 <div fxLayout="row" fxLayoutAlign="start start">
@@ -37,7 +38,8 @@
                 </div>
             </div>
             <div fxLayout="column" fxLayoutAlign="start start">
-                <div fxLayout="row" class="width-100 relative-parent" fxLayoutAlign="start start">
+                <div fxLayout="row" fxLayout.xs="column" class="width-100 relative-parent" fxLayoutAlign="start start"
+                    fxLayoutAlign.xs="center center">
                     <div fxLayout="column" class="card">
                         <h3 class="card-title">
                             Eligibility calculator
@@ -102,8 +104,8 @@
 
                     <div fxLayout="column" class="height-100" fxLayoutAlign="center  center">
 
-                        <div fxLayout="row" fxFlex=70 fxLayoutAlign="space-around center" fxHide fxShow.gt-xs
-                            class="card-side">
+                        <div fxLayout="row" fxFlex=70 fxLayoutAlign="space-around center"
+                            [ngClass.xs]="'card-side-small'" class="card-side">
                             <div fxLayout="column" fxLayoutAlign="space-evenly  center" fxLayoutGap="1em">
                                 <div fxLayout="row" fxLayoutAlign="start start">
                                     <h3 class="custom-white-medium-text">Loan amount</h3>

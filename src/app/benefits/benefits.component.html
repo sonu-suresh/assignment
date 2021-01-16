@@ -2,14 +2,16 @@
 
 
     <div class="content-benefits" fxLayout="row wrap" fxLayoutAlign="space-evenly" fxLayoutGap.sm="3em"
-        fxLayout.xs="column" fxLayoutAlign.sm="center center" fxLayout.sm="column wrap" fxFlex=100>
+        fxLayout.xs="column" fxLayoutGap.xs="2em" fxLayoutAlign.sm="center center" fxLayout.sm="column wrap" fxFlex=100>
         <img class="wave-background" src="assets/images/sol_wave_bg.svg" alt="wave-1">
-        <div fxFlex="55" fxLayout="column" class="section2 " fxFlex.xs="100">
+        <div fxFlex="55" fxFlex.sm="75" fxFlex.md="75" fxLayout="column" fxLayoutAlign.xs="center center"
+            class="section2 " fxFlex.sm="75" fxFlex.xs="100">
             <div fxLayout="column" fxLayoutAlign="start start">
                 <div fxLayout="row" fxLayout.xs="column" fxLayoutAlign="space-around center">
-                    <div fxLayout="column" fxFlex=45>
+                    <div fxLayout="column" fxFlex=45 fxFlex.xs="100">
                         <div fxLayout="row" *ngFor="let item of firstSection"
-                            [ngClass]="{'benefit-card-special': item.special}" class="benefit-card">
+                            [ngClass]="{'benefit-card-special': item.special}" [ngClass.xs]="'benefit-card-small'"
+                            class="benefit-card">
 
                             <div fxLayout="column" fxLayoutGap="0.7em" fxLayoutAlign="space-between start">
                                 <div fxLayout="row" fxLayoutAlign="start start">
@@ -32,7 +34,8 @@
 
                     <div fxLayout="column" fxFlex=45>
                         <div fxLayout="row" *ngFor="let item of secondSection"
-                            [ngClass]="{'benefit-card-special': item.special}" class="benefit-card">
+                            [ngClass]="{'benefit-card-special': item.special}" [ngClass.xs]="'benefit-card-small'"
+                            class="benefit-card">
 
                             <div fxLayout="column" fxLayoutGap="0.7em" fxLayoutAlign="space-between start">
                                 <div fxLayout="row" fxLayoutAlign="start start">
@@ -58,11 +61,11 @@
             </div>
         </div>
 
-        <div fxFlex="35" fxLayout="column" class="section1 " fxFlex.xs="55" fxLayoutAlign="center start"
-            fxLayoutAlign.lt-md="end start">
-            <div fxLayout="column" fxLayoutAlign="start start">
+        <div fxFlex.gt-xs="35" fxLayout="column" class="section1 " fxFlex.xs="50" fxLayoutAlign="center start"
+            fxLayoutAlign.lt-md="end start" [ngClass.xs]="'mobile-padding'">
+            <div fxLayout="column" fxLayoutAlign.xs="center center" fxLayoutAlign="start start">
                 <div fxLayout="row" fxLayoutAlign="start start">
-                    <h1 class="section-heading"> Boost your business with Open </h1>
+                    <h1 [ngClass.gt-xs]="'section-heading'"> Boost your business with Open </h1>
                 </div>
                 <div class="black-line">
                 </div>
