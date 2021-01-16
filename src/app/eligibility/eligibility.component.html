@@ -1,17 +1,18 @@
 <div>
     <div class="circles-parent relative-parent">
+        <div class="circle-left-background">
+            <div fxHide fxShow.gt-sm fxLayout="row" fxLayoutAlign="start start">
+                <img src="assets/images/blob-small.svg" alt="circle-1">
 
-    </div>
-
-
-    <div class="circle-left-background">
-        <div fxHide fxShow.gt-sm fxLayout="row" fxLayoutAlign="start start">
-            <img src="assets/images/blob-small.svg" alt="circle-1">
-
+            </div>
         </div>
     </div>
-    <div class="content" fxLayout="row wrap" fxLayout.xs="column" fxFlex=100>
-        <div fxFlex="48" fxLayout="column" class="section1" fxFlex.xs="55">
+
+
+
+    <div class="content" fxLayoutGap.sm="3em" fxLayout="row wrap" fxLayout.xs="column" fxLayoutAlign.sm="center center"
+        fxLayout.sm="column" fxLayoutAlign="center" fxFlex=100>
+        <div fxFlex="48" fxFlex.sm="70" fxLayout="column" class="section1" fxFlex.xs="55">
             <div fxLayout="column" [ngClass.gt-md]="'section-padding'" fxLayoutAlign="start start">
                 <div fxLayout="row" fxLayoutAlign="start start">
                     <h1 class="section-heading"> We make it Super Simple </h1>
@@ -26,7 +27,8 @@
             </div>
         </div>
 
-        <div fxFlex="48" fxLayout="column" [ngClass.gt-md]="'section-padding'" class="section2" fxFlex.xs="15">
+        <div fxFlex="48" fxFlex.sm="70" fxLayout="column" [ngClass.gt-md]="'section-padding'" class="section2"
+            fxFlex.xs="15">
 
             <div fxHide fxShow.gt-sm class="circle-background">
                 <div fxLayout="row" fxLayoutAlign="start start">
@@ -100,7 +102,7 @@
 
                     <div fxLayout="column" class="height-100" fxLayoutAlign="center  center">
 
-                        <div fxLayout="row" fxFlex=70 fxLayoutAlign="space-around center" fxHide fxShow.gt-sm
+                        <div fxLayout="row" fxFlex=70 fxLayoutAlign="space-around center" fxHide fxShow.gt-xs
                             class="card-side">
                             <div fxLayout="column" fxLayoutAlign="space-evenly  center" fxLayoutGap="1em">
                                 <div fxLayout="row" fxLayoutAlign="start start">
@@ -129,7 +131,7 @@
 
                 </div>
 
-                <div fxLayout="row" fxFlex=100 class="width-100" fxLayoutAlign="space-around center" fxHide fxShow.xs
+                <!-- <div fxLayout="row" fxFlex=100 class="width-100" fxLayoutAlign="space-around center" fxHide fxShow.xs
                     class="card-side">
                     <div fxLayout="column" fxLayoutAlign="space-evenly  center" fxLayoutGap="1em">
                         <div fxLayout="row" fxLayoutAlign="start start">
@@ -149,7 +151,7 @@
 
                         </app-custom-button>
                     </div>
-                </div>
+                </div> -->
 
             </div>
         </div>

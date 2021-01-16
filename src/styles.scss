@@ -55,11 +55,22 @@ body {
 }
 
 .bounds-bottom {
-  background: transparent url(assets/images/sol_wave_bg.svg) 45% 0% no-repeat
-    padding-box;
+  position: relative;
   padding-bottom: 4em;
 }
-
+.content-benefits {
+  // background: transparent url(assets/images/sol_wave_bg.svg) 85% 0% no-repeat
+  //   padding-box;
+  position: relative;
+}
+.wave-background {
+  width: 100%;
+  position: absolute;
+  bottom: -8%;
+  right: 0;
+  left: 0;
+  z-index: -10;
+}
 .black-line {
   height: 0.4em;
   width: 160px;

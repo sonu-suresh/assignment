@@ -1,9 +1,12 @@
 <div class="bounds-bottom">
 
-    <div class="content" fxLayout="row wrap" fxLayout.xs="column wrap" fxFlex=100>
-        <div fxFlex="50" fxLayout="column" [ngClass.gt-md]="'section-padding'" class="section2 " fxFlex.xs="15">
+
+    <div class="content-benefits" fxLayout="row wrap" fxLayoutAlign="space-evenly" fxLayoutGap.sm="3em"
+        fxLayout.xs="column" fxLayoutAlign.sm="center center" fxLayout.sm="column wrap" fxFlex=100>
+        <img class="wave-background" src="assets/images/sol_wave_bg.svg" alt="wave-1">
+        <div fxFlex="55" fxLayout="column" class="section2 " fxFlex.xs="100">
             <div fxLayout="column" fxLayoutAlign="start start">
-                <div fxLayout="row" fxLayoutAlign="space-around center">
+                <div fxLayout="row" fxLayout.xs="column" fxLayoutAlign="space-around center">
                     <div fxLayout="column" fxFlex=45>
                         <div fxLayout="row" *ngFor="let item of firstSection"
                             [ngClass]="{'benefit-card-special': item.special}" class="benefit-card">
@@ -55,7 +58,8 @@
             </div>
         </div>
 
-        <div fxFlex="50" fxLayout="column" [ngClass.gt-md]="'section-padding'" class="section1 " fxFlex.xs="55">
+        <div fxFlex="35" fxLayout="column" class="section1 " fxFlex.xs="55" fxLayoutAlign="center start"
+            fxLayoutAlign.lt-md="end start">
             <div fxLayout="column" fxLayoutAlign="start start">
                 <div fxLayout="row" fxLayoutAlign="start start">
                     <h1 class="section-heading"> Boost your business with Open </h1>
