@@ -11,7 +11,8 @@ export class EligibilityComponent implements OnInit {
   emiAmount = 0;
   maxEmiAmount = 0;
   ngOnInit(): void {}
-  calculateLoan(slideObj) {
+
+  calculateLoan(slideObj): void {
     if (slideObj && slideObj.title === 'Monthly Income') {
       this.loanAmount = slideObj.value * 2;
       this.emiAmount =

@@ -6,8 +6,8 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./custom-button.component.scss']
 })
 export class CustomButtonComponent implements OnInit {
-  @Input('buttonText') buttonText: String;
-  @Input('buttonType') buttonType: String = 'bordered';
+  @Input('buttonText') buttonText: string;
+  @Input('buttonType') buttonType: string = 'bordered';
   constructor() {}
 
   ngOnInit(): void {}
