@@ -7,16 +7,16 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 })
 export class CustomSliderComponent implements OnInit {
   @Output() sliderChanged = new EventEmitter<any>();
-  @Input('title') title: String;
-  @Input('startValue') startValue: Number = 50000;
-  @Input('min') min: Number = 30000;
-  @Input('max') max: Number = 300000;
+  @Input('title') title: string;
+  @Input('startValue') startValue: number = 50000;
+  @Input('min') min: number = 30000;
+  @Input('max') max: number = 300000;
   @Input('showMinMax') showMinMax: boolean = false;
   value = 50000;
   constructor() {}
 
   ngOnInit(): void {}
-  onSliderChange() {
+  onSliderChange(): void {
     this.sliderChanged.emit({ title: this.title, value: this.value });
   }
 }
