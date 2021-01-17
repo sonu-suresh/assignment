@@ -3,26 +3,30 @@
   width: 75px;
 }
 
-.benefit-card-title {
-}
 .benefit-card-description {
   font-size: 15px;
   color: #999;
 }
 
 .benefit-card {
-  min-width: 280px;
+  min-width: 350px;
   min-height: 200px;
-  background-color: white;
+  background-color: #fff;
   margin-top: 2em;
   margin-bottom: 2em;
-  border-radius: 8px;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
-  -webkit-border-radius: 20px;
-  padding: 1.5em;
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgb(2 0 19 / 12%);
+  padding: 3em 2em;
+}
+.benefit-card-small {
+  width: 330px !important;
 }
 
 .benefit-card-special {
   background-color: var(--light-purple);
   color: white;
+  opacity: 0.7;
+}
+.mobile-padding {
+  padding: 1.5em;
 }

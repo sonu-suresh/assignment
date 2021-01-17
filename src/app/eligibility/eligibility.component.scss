@@ -2,10 +2,10 @@
 
 .circle-background {
   position: absolute;
-  right: 0;
-  top: -52%;
-  left: 35%;
-  transform: scale(0.6);
+  right: -200px;
+  top: -400px;
+  transform: scale(0.7);
+  z-index: -1;
 }
 
 .circle-left-background {
@@ -49,15 +49,15 @@
   max-width: 65%;
 }
 .video-dots {
-  position: relative;
-  bottom: -200px;
-  right: 250px;
+  position: absolute;
+  bottom: -40px;
+  right: 65px;
   z-index: -1;
 }
 .video-dots-2 {
-  position: relative;
-  bottom: -500px;
-  right: 350px;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
   z-index: -1;
 }
 
